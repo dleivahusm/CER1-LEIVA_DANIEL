@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Adopción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--- NAVEGADOR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <img src="img/iconos/logo.png" alt="Logo de la Fundación Huellas del Puerto" class="navbar-brand me-3" style="height: 40px;">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="mascotas.html">Galería</a>
+                <a class="nav-link" href="adopcion.html">Solicitud de Adopción</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          
+          <div class="form-container p-4 p-md-5 shadow-sm border">
+            <h1 class="h2 fw-bold mb-2">Formulario de Postulación a Adopción</h1>
+            <p class="text-muted mb-4">
+              Por favor, completa el siguiente formulario con tus datos. Nos pondremos en contacto contigo a la brevedad para agendar una entrevista presencial o virtual.
+            </p>
+
+            <form action="#" method="POST" class="needs-validation">
+              
+              <!-- NOMBRE COMPLETO -->
+              <div class="mb-3">
+                <label for="nombreCompleto" class="form-label fw-semibold">Nombre Completo <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" placeholder="Ej: Daniel Leiva" required>
+              </div>
+
+              <div class="row">
+                <!-- CORREO ELECTRÓNICO -->
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label fw-semibold">Correo Electrónico <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.cl" autocomplete="on" required>
+                </div>
+
+                <!-- TELÉFONO -->
+                <div class="col-md-6 mb-3">
+                  <label for="telefono" class="form-label fw-semibold">Teléfono de Contacto <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56912345678" autocomplete="on" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- EDAD (RESTRICCIÓN MAYOR DE EDAD: MINIMO 18), TOLERANCIA DE HASTA 130 AÑOS (REALISTA)-->
+                <div class="col-md-6 mb-3">
+                  <label for="edad" class="form-label fw-semibold">Edad <span class="text-danger">*</span></label>
+                  <input type="number" class="form-control" id="edad" name="edad" min="18" max="130" placeholder="Mínimo 18 años" required>
+                  <div class="form-text">Debes ser mayor de edad para postular a una adopción.</div>
+                </div>
+
+                <!-- MASCOTA DE INTERÉS -->
+                <div class="col-md-6 mb-3">
+                  <label for="mascotaInteres" class="form-label fw-semibold">Mascota de Interés <span class="text-danger">*</span></label>
+                  <select class="form-select" id="mascotaInteres" name="mascotaInteres" required>
+                    <option value="" selected disabled>Selecciona una mascota...</option>
+                    <option value="cucurella">Cucurella (Gato)</option>
+                    <option value="luna">Lic. Pedro (Gato)</option>
+                    <option value="pelusa">Pelusa (Gato)</option>
+                    <option value="bruno">Bruno (Perro)</option>
+                    <option value="toby">Toby (Conejo)</option>
+                    <option value="simona">Simona (Gato)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- TIPO DE VIVIENDA -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold d-block">Tipo de Vivienda <span class="text-danger">*</span></label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tipoVivienda" id="viviendaCasa" value="Casa" required>
+                  <label class="form-check-label" for="viviendaCasa">Casa</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tipoVivienda" id="viviendaDpto" value="Departamento" required>
+                  <label class="form-check-label" for="viviendaDpto">Departamento</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tipoVivienda" id="viviendaOtro" value="Otro" required>
+                  <label class="form-check-label" for="viviendaOtro">Otro</label>
+                </div>
+              </div>
+
+              <!-- INDICA SI TIENE OTRAS MASCOTAS -->
+              <div class="mb-3">
+                <label class="form-label fw-semibold d-block">¿Tiene otras mascotas actualmente? <span class="text-danger">*</span></label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="otrasMascotas" id="mascotasSi" value="Si" required>
+                  <label class="form-check-label" for="mascotasSi">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="otrasMascotas" id="mascotasNo" value="No" required>
+                  <label class="form-check-label" for="mascotasNo">No</label>
+                </div>
+              </div>
+
+              <!-- MOTIVO DE LA ADOPCIÓN O COMENTARIOS -->
+              <div class="mb-3">
+                <label for="motivo" class="form-label fw-semibold">Motivo de la Adopción o Comentarios Adicionales</label>
+                <textarea class="form-control" id="motivo" name="motivo" rows="4" placeholder="Cuéntanos brevemente por qué deseas adoptar y la experiencia que tienes cuidando mascotas..."></textarea>
+              </div>
+
+              <!-- COMPROMISO DE TENENCIA RESPONSABLE -->
+              <div class="mb-4 form-check">
+                <input class="form-check-input" type="checkbox" id="compromiso" name="compromiso" required>
+                <label class="form-check-label" for="compromiso">
+                  Declaro aceptar el <strong>compromiso de tenencia responsable</strong> (Ley 21.020), comprometiéndome a brindar alimentación, vacunas, atenciones veterinarias y afecto a la mascota. <span class="text-danger">*</span>
+                </label>
+              </div>
+
+              <!-- BOTÓN DE ENVIAR SOLICITUD. AUNQUE NO ES FUNCIONAL -->
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-secundario btn-lg">Enviar Solicitud de Adopción</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-1">© 2026 Fundación Huellas del Puerto - Valparaíso, Chile</p>
+      <small class="text-white-50">Taller de Lenguaje de Programación - Universidad Técnica Federico Santa María</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

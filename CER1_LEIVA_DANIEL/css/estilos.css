@@ -1,0 +1,141 @@
+:root {
+  --color-primario: #034732;  
+  --color-secundario: #84714F;   
+  --color-oscuro: #280003;       
+  --color-crema: #F4E4BA;        
+  --color-tierra: #A7754D;       
+  --color-marfil: #FAF6ED;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-crema);
+  color: var(--color-oscuro);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-oscuro);
+}
+
+h1, h2 {
+    font-family: 'Tahoma', Geneva, sans-serif;
+    font-weight: 700;
+}
+.navbar {
+  background-color: var(--color-marfil) !important;
+  border-bottom: 3px solid var(--color-primario);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--color-primario) !important;
+}
+
+.nav-link {
+  color: var(--color-oscuro) !important;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: var(--color-primario) !important;
+  border-bottom: 2px solid var(--color-primario);
+}
+
+/* Banner Principal (Hero Section) */
+.hero-banner {
+  background: linear-gradient(135deg, rgba(3, 71, 50, 0.88), rgba(40, 0, 3, 0.85)),
+              url('https://images.unsplash.com/photo-1450778869186-00d5d5fbc126?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: #FFFFFF;
+  padding: 5rem 1rem;
+  /* border-radius: 0 0 1.5rem 1.5rem; BORDE CURVADO */ 
+}
+
+.hero-banner h1 {
+  color: #FFFFFF !important;
+}
+
+/* Tarjetas de Mascotas y Contenedores */
+.card-mascota {
+  background-color: var(--color-marfil);
+  border: 1px solid var(--color-tierra);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-mascota:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(40, 0, 3, 0.15) !important;
+}
+
+.card-mascota img {
+  height: 230px;
+  object-fit: cover;
+}
+
+/* Badges para el estado de adopción */
+.bg-marfil-box {
+  background-color: var(--color-marfil);
+  border: 1px solid var(--color-tierra);
+}
+
+.badge-disponible {
+  background-color: var(--color-primario);
+  color: #FFFFFF;
+}
+
+.badge-proceso {
+  background-color: var(--color-tierra);
+  color: #FFFFFF;
+}
+
+/* Formulario */
+.form-container {
+  background-color: var(--color-marfil);
+  border-radius: 12px;
+  border-top: 5px solid var(--color-primario);
+  border-left: 1px solid var(--color-tierra);
+  border-right: 1px solid var(--color-tierra);
+  border-bottom: 1px solid var(--color-tierra);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 0 0.25rem rgba(66, 122, 161, 0.25);
+}
+
+/* Botones Personalizados */
+.btn-primario {
+  background-color: var(--color-primario);
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-primario:hover {
+  background-color: #022E20;
+  color: #FFFFFF;
+}
+
+.btn-secundario {
+  background-color: var(--color-secundario);
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-secundario:hover {
+  background-color: #2f1e11;
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: var(--color-oscuro);
+  color: #FFFFFF;
+}

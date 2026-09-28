@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galer&iacute;a de Mascotas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!--- NAVEGADOR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <img src="img/iconos/logo.png" alt="Logo de la Fundación Huellas del Puerto" class="navbar-brand me-3" style="height: 40px;">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link" href="mascotas.html">Galería</a>
+                <a class="nav-link" href="adopcion.html">Solicitud de Adopción</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold">Mascotas en Adopción</h1>
+        <p class="lead text-muted col-md-8 mx-auto">
+          Conoce a nuestros rescatados que están buscando un hogar amoroso y permanente en Valparaíso y alrededores.
+        </p>
+      </div>
+
+      <!-- GRILLA DE MASCOTAS (MÍNIMO 6 MASCOTAS) -->
+      <div class="row g-4">
+
+        <!-- MASCOTA 1 -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="card card-mascota h-100 shadow-sm">
+            <img src="img/animales/gato_cucurella.avif" class="card-img-top" alt="Fotografía de Cucurella">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h4 card-title fw-bold mb-0">Cucurella</h2>
+                <span class="badge bg-success">Disponible</span>
+              </div>
+              <p class="card-subtitle text-muted mb-3">Especie: Gato | Edad: 2 años | Tamaño: Mediano</p>
+              <p class="card-text flex-grow-1">Cucurella fue rescatado cerca de Madrid. Es dinámico, amigable, súper jugueton y convive muy bien con otros gatos. <b>Solo come paella.</b></p>
+              <a href="adopcion.html" class="btn btn-primario w-100 mt-2">Postular Adopción</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MASCOTA 2 -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="card card-mascota h-100 shadow-sm">
+            <img src="img/animales/gato_licenciado.jpg" class="card-img-top" alt="Fotografía de Licenciado">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h4 card-title fw-bold mb-0">Lic. Pedro</h2>
+                <span class="badge bg-warning text-dark">En proceso de adopción</span>
+              </div>
+              <p class="card-subtitle text-muted mb-3">Especie: Gato | Edad: 2 meses | Tamaño: Pequeño</p>
+              <p class="card-text flex-grow-1">Licenciado Pedro es un gato reservado al principio, pero muy ronroneador cuando toma confianza. Le encantan las series de criminalistica.</p>
+              <a href="adopcion.html" class="btn btn-primario w-100 mt-2">Postular Adopción</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MASCOTA 3 -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="card card-mascota h-100 shadow-sm">
+            <img src="img/animales/gato_miron.jpg" class="card-img-top" alt="Fotografía de Pelusa">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h4 card-title fw-bold mb-0">Pelusa</h2>
+                <span class="badge bg-success">Disponible</span>
+              </div>
+              <p class="card-subtitle text-muted mb-3">Especie: Gato | Edad: 3 años | Tamaño: Mediano</p>
+              <p class="card-text flex-grow-1">Un gato esponjoso y cariñoso que ama estar acurrucado en el sillón. Ideal para departamentos o casas tranquilas.</p>
+              <a href="adopcion.html" class="btn btn-primario w-100 mt-2">Postular Adopción</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MASCOTA 4 -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="card card-mascota h-100 shadow-sm">
+            <img src="img/animales/perro_penoso.avif" class="card-img-top" alt="Fotografía de Bruno">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h4 card-title fw-bold mb-0">Bruno</h2>
+                <span class="badge bg-success">Disponible</span>
+              </div>
+              <p class="card-subtitle text-muted mb-3">Especie: Perro | Edad: 3 años | Tamaño: Mediano</p>
+              <p class="card-text flex-grow-1">Bruno es un perro algo desconfiado al principio, pero muy leal una vez que se acostumbra.</p>
+              <a href="adopcion.html" class="btn btn-primario w-100 mt-2">Postular Adopción</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MASCOTA 5 -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="card card-mascota h-100 shadow-sm">
+            <img src="img/animales/conejo_tierno.webp" class="card-img-top" alt="Fotografía de Toby">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h4 card-title fw-bold mb-0">Toby</h2>
+                <span class="badge bg-success">Disponible</span>
+              </div>
+              <p class="card-subtitle text-muted mb-3">Especie: Conejo | Edad: 6 meses | Tamaño: Pequeño</p>
+              <p class="card-text flex-grow-1">Conejo curioso y lleno de energía. Busca un hogar comprometido con su cuidado y salidas diarios.</p>
+              <a href="adopcion.html" class="btn btn-primario w-100 mt-2">Postular Adopción</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- MASCOTA 6 -->
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="card card-mascota h-100 shadow-sm">
+            <img src="img/animales/gato_sonriente.jpg" class="card-img-top" alt="Fotografía de Simona">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h2 class="h4 card-title fw-bold mb-0">Simona</h2>
+                <span class="badge bg-warning text-dark">En proceso de adopción</span>
+              </div>
+              <p class="card-subtitle text-muted mb-3">Especie: Gato | Edad: 5 años | Tamaño: Grande</p>
+              <p class="card-text flex-grow-1">Simona es sarcástica, sonriente y busca siempre compañía humana. Ya está esterilizada y vacunada.</p>
+              <a href="adopcion.html" class="btn btn-primario w-100 mt-2">Postular Adopción</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-1">© 2026 Fundación Huellas del Puerto - Valparaíso, Chile</p>
+      <small class="text-white-50">Taller de Lenguaje de Programación - Universidad Técnica Federico Santa María</small>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
